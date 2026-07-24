@@ -8,6 +8,7 @@ class ProductCreate(BaseModel):
     price: float
     stock_quantity: int = 0
     minimum_stock: int = 0
+    size: str | None = None
     category_id: int
 
 class ProductResponse(BaseModel):
@@ -17,6 +18,7 @@ class ProductResponse(BaseModel):
     price: float
     stock_quantity: int
     minimum_stock: int
+    size: str | None = None
     category: CategoryResponse
 
     model_config = {"from_attributes": True}
@@ -26,4 +28,5 @@ class ProductUpdate(BaseModel):
     description: str | None = None
     price: float
     minimun_stock: int = 0
+    size: str | None
     category_id: int
