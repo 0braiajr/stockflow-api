@@ -4,6 +4,7 @@ import { Layout } from "./components/Layout"
 import { LoginPage } from "./pages/LoginPage"
 import { DashboardPage } from "./pages/DashboardPage"
 import { CategoriesPage } from "./pages/Categories"
+import { ProductsPage } from "./pages/ProductsPage"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
+          <Route path="/products" element={<ProductsPage />} />
         </Route>
       </Route>
     </Routes>

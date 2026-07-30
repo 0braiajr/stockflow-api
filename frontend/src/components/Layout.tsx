@@ -17,6 +17,9 @@ export function Layout() {
                     <NavLink to="/categories" className={linkClass}>
                         Categorias
                     </NavLink>
+                    <NavLink to="/products" className={linkClass}>
+                         Produtos   
+                    </NavLink>
                 </div>
 
                 <button
