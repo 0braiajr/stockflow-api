@@ -27,6 +27,6 @@ class ProductUpdate(BaseModel):
     name: str
     description: str | None = None
     price: float
-    minimun_stock: int = 0
+    minimum_stock: int = 0
     size: str | None
     category_id: int

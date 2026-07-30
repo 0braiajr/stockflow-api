@@ -46,7 +46,7 @@ class ProductService:
         product.name = data.name
         product.description = data.description
         product.price = data.price
-        product.minimum_stock = data.minimun_stock
+        product.minimum_stock = data.minimum_stock
         product.category_id = data.category_id
 
         return self.repository.update(product)
