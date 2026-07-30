@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import { ProtectedRoute } from "./components/ProtectedRoute"
+import { Layout } from "./components/Layout"
 import { LoginPage } from "./pages/LoginPage"
 import { DashboardPage } from "./pages/DashboardPage"
+import { CategoriesPage } from "./pages/Categories"
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
       <Route path="/login" element={<LoginPage />} />
 
       <Route element={<ProtectedRoute />}>
-        <Route path="/" element={<DashboardPage />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
+        </Route>
       </Route>
     </Routes>
   )
