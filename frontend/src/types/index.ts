@@ -31,3 +31,10 @@ export interface AuthToken {
     access_token: string
     token_type: string
 }
+
+export interface DashboardResponse {
+    total_products: number
+    total_categories: number
+    total_stock_value: number
+    low_stock_count: number
+}
